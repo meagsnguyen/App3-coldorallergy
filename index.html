@@ -54,7 +54,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	function resultsPer(){
 		var total_percent = ((allergy_count + cold_count)/4)*100;
 			alert("allergy percentage: " + (allergy_count / total) * 100 + "\ cold percentage: " + (cold_count / total) * 100);
+		var resultsText = document.getElementById("results");
 		resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; 
+
 	
 	}
 
@@ -156,7 +158,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<p>Test results</p>
          	<!--percentages dislayed here-->
 	</div>
-	<a onclick="resultsPer();" class="w3-btn w3-black"> Results</a>
+	<a onclick="resultsPer();" class="w3-btn w3-black"> Results </a>
+	<p id="results"></p>
 </div>	
 	
 <footer class="w3-bottom w3-container w3-flat-carrot">
