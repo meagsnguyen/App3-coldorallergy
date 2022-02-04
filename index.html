@@ -51,7 +51,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		alert("cold count: " + cold_count);
         }
 	
-	function resultsPer(){
+	function results(){
 		var total_percent = ((allergy_count + cold_count)/4)*100;
 			alert("allergy percentage: " + (allergy_count / total) * 100 + "\ cold percentage: " + (cold_count / total) * 100);
 		var resultsText = document.getElementById("results");
@@ -158,10 +158,10 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<p>Test results</p>
          	<!--percentages dislayed here-->
 	</div>
-	<a onclick="resultsPer();" class="w3-btn w3-black"> Results </a>
+	<a onclick="results();" class="w3-btn w3-black"> Results </a>
 	
 	<div>
-	<p id="resultsPer"></p>
+	<p id="results"></p>
 </div>	
 	
 <footer class="w3-bottom w3-container w3-flat-carrot">
