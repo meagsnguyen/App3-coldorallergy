@@ -52,9 +52,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         }
 	
 	function results(){
-		var allergyPercent = allergy_count/ (allergy_count + cold_count) * 100;
-		var coldPercent = cold_count/ (allergy_count + cold_count) * 100;
-		var resultText = document.getElementById("results");
+		var allergyPercent = allergy_count/ (allergy_count + cold_count) * 100;  <!--calculations for allergies-->
+		var coldPercent = cold_count/ (allergy_count + cold_count) * 100;	<!--calculations for cold-->
+		var resultText = document.getElementById("results");		<!--shows results-->
 		resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "%<br> Probability it is a cold=" + coldPercent + "%";
 		
 	}
@@ -107,7 +107,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
     	<div id="content" class="w3-container">
         <p>Are your eyes itchy or watery?</p> 
 		<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
-         	<a href="#two"  onclick="coldAdd();" class="w3-btn w3-black"> No</a>
+         	<a href="#two"  onclick="coldAdd();" class="w3-btn w3-black"> No</a>		<!--buttons that adds to calculations when chosen and goes into next page-->
 
     	</div>
 </div>
@@ -119,12 +119,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id="content" class="w3-container">
 		<p>Do you have a fever?</p>
-		<a href="#three"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a>
+		<a href="#three"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a>		<!--swiched yes to cold because of data-->
          	<a href="#three"  onclick="allergyAdd();" class="w3-btn w3-black"> No</a>
 	</div>
 </div>	
 	
-<div class="page" id="three">
+<div class="page" id="three">			<!--id=three b/c has to change +1 every page-->
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 3</h1>
 	</div>
@@ -154,7 +154,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 
 	<div id="content" class="w3-container">
-	<a  onclick="results();" class="w3-btn w3-black">Click here to view results</a>
+	<a  onclick="results();" class="w3-btn w3-black">Click here to view results</a>  <!--button that shows results-->
 	<p id="results"></p>
 		
 	</div>
